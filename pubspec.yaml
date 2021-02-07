@@ -1,0 +1,31 @@
+name: notify
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^6.1.1
+  cupertino_icons: ^1.0.0
+  equatable: ^1.2.5
+  firebase_auth: ^0.20.0+1
+  firebase_core: ^0.7.0
+  flutter_bloc: ^6.1.1
+  font_awesome_flutter: ^8.11.0
+  google_fonts: ^1.1.2
+  google_sign_in: ^4.5.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^7.1.0
+  mockito: ^4.1.4
+
+flutter:
+  uses-material-design: true

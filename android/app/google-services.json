@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "604928715787",
+    "project_id": "simple-notify-e6159",
+    "storage_bucket": "simple-notify-e6159.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604928715787:android:bd782db49a92104379ab0e",
+        "android_client_info": {
+          "package_name": "com.fljubic.notify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604928715787-f85hhiiaiqk07k3it39mrssabhta17l7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1FtoUumdO9Emk8c1erNOZG4NWaFeRtPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604928715787-f85hhiiaiqk07k3it39mrssabhta17l7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
