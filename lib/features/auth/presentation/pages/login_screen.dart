@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
+  static Route route() => MaterialPageRoute(builder: (_) => LoginScreen());
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -24,12 +26,14 @@ class LoginScreen extends StatelessWidget {
             screenWidth: screenWidth,
             icon: Icon(Icons.account_circle_rounded),
             text: Text("Continue with Google"),
+            onTap: () {},
           ),
           SizedBox(height: 10.0),
           SignInContainer(
             screenWidth: screenWidth,
             icon: Icon(Icons.account_circle_rounded),
             text: Text("Continue with Facebook"),
+            onTap: () {},
           ),
           SizedBox(height: 20.0),
           Text("or"),
@@ -39,6 +43,7 @@ class LoginScreen extends StatelessWidget {
             text: Text("Skip signing in"),
             icon: Icon(Icons.assignment_ind_rounded),
             color: Colors.red[100],
+            onTap: () {},
           )
         ],
       ),
@@ -52,10 +57,12 @@ class SignInContainer extends StatelessWidget {
     @required this.screenWidth,
     @required this.text,
     @required this.icon,
+    @required this.onTap,
     this.color,
   }) : super(key: key);
 
   final double screenWidth;
+  final Function onTap;
   final Icon icon;
   final Text text;
   final Color color;
@@ -72,6 +79,7 @@ class SignInContainer extends StatelessWidget {
           borderRadius: BorderRadius.circular(5),
         ),
         child: ListTile(
+          onTap: onTap,
           minVerticalPadding: 0.0,
           leading: icon,
           title: Center(child: text),
